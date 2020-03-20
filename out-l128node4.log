@@ -1,0 +1,314 @@
+Setting CUDA device
+Setting CUDA device to 13
+QDP m0,n0@circe-n003 info:  trying to get device 13
+QDP m0,n0@circe-n003 info:  trying to grab pre-existing context
+QDP m0,n0@circe-n003 info:  trying to create a context
+Initializing QMP parInitialize done
+Initializing QUDA device (using CUDA device no. 0)
+QUDA 0.9.1 (git PERFLAB_MILC_201903-598-g256c634-sm_70)
+CUDA Driver version = 11000
+CUDA Runtime version = 10010
+Found device 0: Tesla V100-SXM3-32GB-H
+Found device 1: Tesla V100-SXM3-32GB-H
+Found device 2: Tesla V100-SXM3-32GB-H
+Found device 3: Tesla V100-SXM3-32GB-H
+Found device 4: Tesla V100-SXM3-32GB-H
+Found device 5: Tesla V100-SXM3-32GB-H
+Found device 6: Tesla V100-SXM3-32GB-H
+Found device 7: Tesla V100-SXM3-32GB-H
+Found device 8: Tesla V100-SXM3-32GB-H
+Found device 9: Tesla V100-SXM3-32GB-H
+Found device 10: Tesla V100-SXM3-32GB-H
+Found device 11: Tesla V100-SXM3-32GB-H
+Found device 12: Tesla V100-SXM3-32GB-H
+Found device 13: Tesla V100-SXM3-32GB-H
+Found device 14: Tesla V100-SXM3-32GB-H
+Found device 15: Tesla V100-SXM3-32GB-H
+Using device 0: Tesla V100-SXM3-32GB-H
+WARNING: Data reordering done on GPU (set with QUDA_REORDER_LOCATION=GPU/CPU)
+Initializing QDP-JIT GPUs
+QDP m0,n64@circe-n003 info:  Getting GPU device properties
+QDP m0,n64@circe-n003 info:  Compute capability (major)              = 7
+QDP m0,n64@circe-n003 info:  Compute capability (minor)              = 0
+QDP m0,n64@circe-n003 info:  Divide with IEEE 754 compliant rounding = 1
+QDP m0,n64@circe-n003 info:  Sqrt with IEEE 754 compliant rounding   = 1
+QDP m0,n64@circe-n003 info:  unified addr                            = 1
+QDP m0,n64@circe-n003 info:  asyncTransfers                          = 1
+QDP m0,n64@circe-n003 info:  smem                                    = 49152
+QDP m0,n64@circe-n003 info:  max_gridx                               = 1073741824
+QDP m0,n64@circe-n003 info:  max_gridy                               = 32768
+QDP m0,n64@circe-n003 info:  max_gridz                               = 32768
+QDP m0,n64@circe-n003 info:  max_blockx                              = 1024
+QDP m0,n64@circe-n003 info:  max_blocky                              = 1024
+QDP m0,n64@circe-n003 info:  max_blockz                              = 64
+QDP m0,n64@circe-n003 info:  SM count                                = 80
+QDP m0,n64@circe-n003 info:  GPU memory: free = 33405796352 (31858.250000 MB),  total = 34089730048 (32510.500000 MB)
+QDP m0,n64@circe-n003 info:  Using device memory pool size: 28672 MB
+QDP m0,n64@circe-n003 info:  Trigger GPU evaluation
+LLVM optimization level : 3
+NVPTX Flush to zero     : 0
+Initializing QUDA memory
+Enabling GPU-Direct RDMA access
+Enabling peer-to-peer copy engine and direct load/store access
+Peer-to-peer enabled for rank 0 (gpu=0) with neighbor 1 (gpu=1) dir=0, dim=0, performance rank = (0, 0)
+Peer-to-peer enabled for rank 0 (gpu=0) with neighbor 2 (gpu=2) dir=0, dim=1, performance rank = (0, 0)
+Peer-to-peer enabled for rank 0 (gpu=0) with neighbor 12 (gpu=12) dir=0, dim=2, performance rank = (0, 0)
+Peer-to-peer enabled for rank 0 (gpu=0) with neighbor 1 (gpu=1) dir=1, dim=0, performance rank = (0, 0)
+Peer-to-peer enabled for rank 0 (gpu=0) with neighbor 2 (gpu=2) dir=1, dim=1, performance rank = (0, 0)
+Peer-to-peer enabled for rank 0 (gpu=0) with neighbor 4 (gpu=4) dir=1, dim=2, performance rank = (0, 0)
+WARNING: Using device memory pool allocator
+WARNING: Using pinned memory pool allocator
+WARNING: Environment variable QUDA_RESOURCE_PATH is not set.
+WARNING: Caching of tuned parameters will be disabled.
+Linkage = bool Chroma::MapObjectDiskEnv::registerAll(): registering map obj key colorvec
+0
+Monomials xml is:
+<Monomials>
+<elem>
+<Name>TWO_FLAVOR_EOPREC_CONSTDET_FERM_MONOMIAL</Name>
+
+<InvertParam>
+<invType>QUDA_CLOVER_INVERTER</invType>
+
+<CloverParams>
+<Mass>0.06477197058</Mass>
+
+<clovCoeffR>0.8648334911</clovCoeffR>
+
+<clovCoeffT>0.5271531811</clovCoeffT>
+
+<AnisoParam>
+<anisoP>true</anisoP>
+
+<t_dir>3</t_dir>
+
+<xi_0>6.012497031</xi_0>
+
+<nu>0.8055935787</nu>
+</AnisoParam>
+</CloverParams>
+
+<AntiPeriodicT>true</AntiPeriodicT>
+
+<RsdTarget>1e-07</RsdTarget>
+
+<Delta>0.1</Delta>
+
+<MaxIter>2000</MaxIter>
+
+<SilentFail>true</SilentFail>
+
+<SolverType>BICGSTAB</SolverType>
+
+<Verbose>true</Verbose>
+
+<AsymmetricLinop>true</AsymmetricLinop>
+
+<CudaReconstruct>RECONS_12</CudaReconstruct>
+
+<CudaSloppyPrecision>HALF</CudaSloppyPrecision>
+
+<CudaSloppyReconstruct>RECONS_12</CudaSloppyReconstruct>
+
+<AxialGaugeFix>false</AxialGaugeFix>
+
+<AutotuneDslash>true</AutotuneDslash>
+</InvertParam>
+
+<FermionAction>
+<FermAct>CLOVER</FermAct>
+
+<Mass>0.06477197058</Mass>
+
+<clovCoeffR>0.8648334911</clovCoeffR>
+
+<clovCoeffT>0.5271531811</clovCoeffT>
+
+<FermState>
+<Name>STOUT_FERM_STATE</Name>
+
+<rho>0.14</rho>
+
+<n_smear>2</n_smear>
+
+<orthog_dir>3</orthog_dir>
+
+<FermionBC>
+<FermBC>SIMPLE_FERMBC</FermBC>
+
+<boundary>1 1 1 -1</boundary>
+</FermionBC>
+</FermState>
+
+<AnisoParam>
+<anisoP>true</anisoP>
+
+<t_dir>3</t_dir>
+
+<xi_0>6.012497031</xi_0>
+
+<nu>0.8055935787</nu>
+</AnisoParam>
+</FermionAction>
+
+<ChronologicalPredictor>
+<Name>LAST_SOLUTION_4D_PREDICTOR</Name>
+</ChronologicalPredictor>
+
+<NamedObject>
+<monomial_id>monomial_1</monomial_id>
+</NamedObject>
+</elem>
+
+<elem>
+<Name>GAUGE_MONOMIAL</Name>
+
+<GaugeAction>
+<Name>ANISO_SPECTRUM_GAUGEACT</Name>
+
+<beta>2.8</beta>
+
+<u_s>0.8275375628</u_s>
+
+<u_t>1</u_t>
+
+<omega>0</omega>
+
+<GaugeBC>
+<Name>PERIODIC_GAUGEBC</Name>
+</GaugeBC>
+
+<AnisoParam>
+<anisoP>true</anisoP>
+
+<t_dir>3</t_dir>
+
+<xi_0>4.843629</xi_0>
+</AnisoParam>
+</GaugeAction>
+
+<NamedObject>
+<monomial_id>monomial_2</monomial_id>
+</NamedObject>
+</elem>
+</Monomials>
+
+HMC_xml is: 
+<Hamiltonian>
+<monomial_ids>
+<elem>monomial_1</elem>
+
+<elem>monomial_2</elem>
+</monomial_ids>
+</Hamiltonian>
+Integrator XML is: 
+<MDIntegrator>
+<tau0>0.5</tau0>
+
+<anisoP>true</anisoP>
+
+<t_dir>3</t_dir>
+
+<xi_mom>3</xi_mom>
+
+<Integrator>
+<Name>LCM_STS_LEAPFROG</Name>
+
+<n_steps>40</n_steps>
+
+<monomial_ids>
+<elem>monomial_1</elem>
+</monomial_ids>
+
+<SubIntegrator>
+<Name>LCM_STS_LEAPFROG</Name>
+
+<n_steps>5</n_steps>
+
+<monomial_ids>
+<elem>monomial_2</elem>
+</monomial_ids>
+</SubIntegrator>
+</Integrator>
+</MDIntegrator>
+
+Setting serial write mode for saving configurations
+InlineMeasurements are: 
+<InlineMeasurements/>
+
+Call QDP create layout
+Lattice initialized:
+  problem size = 128 128 128 256
+  layout size = 64 128 128 256
+  logical machine size = 2 2 4 4
+  subgrid size = 64 64 32 64
+  total number of nodes = 64
+  total volume = 536870912
+  subgrid volume = 8388608
+Finished init of RNG
+Finished lattice layout
+Finished with QDP create layout
+Initialize gauge field
+Gauge initialization: cfg_type = WEAK_FIELD
+Starting up a weak field config
+Gauge field successfully initialized: time= 1.07755 secs
+Gauge field reunitarization found 0 unitarity violations
+Gauge field reunitarized: time=1.178191 secs
+TwoFlavorWilsonTypeFermMonomialParams: read 
+CLOVER
+EvanOddPrecConstDetTwoFlavorWilsonTypeFermMonomial: construct CLOVER
+u0 is 1
+Read Monomial with monomial id: monomial_1
+Create monomial: GAUGE_MONOMIAL
+GaugeMonomialParams: read 
+<GaugeAction>
+      <Name>ANISO_SPECTRUM_GAUGEACT</Name>
+      <beta>2.8</beta>
+      <u_s>0.8275375628</u_s>
+      <u_t>1</u_t>
+      <omega>0</omega>
+      <GaugeBC>
+        <Name>PERIODIC_GAUGEBC</Name>
+      </GaugeBC>
+      <AnisoParam>
+        <anisoP>true</anisoP>
+        <t_dir>3</t_dir>
+        <xi_0>4.843629</xi_0>
+      </AnisoParam>
+    </GaugeAction>
+
+GaugeBC Callback: Creating PeriodicGaugeBC 
+aniso.t_dir3
+Read Monomial with monomial id: monomial_2
+ExactHamiltonian::create(): Trying to bind monomial with ID monomial_1
+ExactHamiltonian::create(): Trying to bind monomial with ID monomial_2
+Subintegrator XML is: 
+<SubIntegrator>
+      <Name>LCM_STS_LEAPFROG</Name>
+      <n_steps>5</n_steps>
+      <monomial_ids>
+        <elem>monomial_2</elem>
+      </monomial_ids>
+    </SubIntegrator>
+
+Binding Monomials
+There are 1 IDs to bind 
+Monomial with ID = monomial_2 bound
+All monomials successfully bound
+Binding Monomials
+There are 1 IDs to bind 
+Monomial with ID = monomial_1 bound
+All monomials successfully bound
+Setting dir 3 to aniso factor 0.333333333333333 originally 9
+<InlineMeasurements/>
+
+There are 0 user measurements 
+Setting Force monitoring to 1
+MC Control: About to do 1 updates
+Doing Update: 1 warm_up_p = 0
+Doing Reversibility Test this traj
+Before HMC trajectory call
+HMC_TIME: Momentum Refresh Time: 1.158785 
+TwoFlavWilson4DMonomial: resetting Predictor after field refresh
+CLOV_LINOP: Time spent in clov deriv (total) = 0
+CLOV_LINOP: Time spent in clov apply/invapply (total) = 17.666629

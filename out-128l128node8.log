@@ -1,0 +1,653 @@
+Setting CUDA device
+Setting CUDA device to 3
+QDP m0,n0@circe-n053 info:  trying to get device 3
+QDP m0,n0@circe-n053 info:  trying to grab pre-existing context
+QDP m0,n0@circe-n053 info:  trying to create a context
+Initializing QMP part
+Initialize done
+Initializing QUDA device (using CUDA device no. 0)
+QUDA 0.9.1 (git PERFLAB_MILC_201903-598-g256c634-sm_70)
+CUDA Driver version = 11000
+CUDA Runtime version = 10010
+Found device 0: Tesla V100-SXM3-32GB-H
+Found device 1: Tesla V100-SXM3-32GB-H
+Found device 2: Tesla V100-SXM3-32GB-H
+Found device 3: Tesla V100-SXM3-32GB-H
+Found device 4: Tesla V100-SXM3-32GB-H
+Found device 5: Tesla V100-SXM3-32GB-H
+Found device 6: Tesla V100-SXM3-32GB-H
+Found device 7: Tesla V100-SXM3-32GB-H
+Found device 8: Tesla V100-SXM3-32GB-H
+Found device 9: Tesla V100-SXM3-32GB-H
+Found device 10: Tesla V100-SXM3-32GB-H
+Found device 11: Tesla V100-SXM3-32GB-H
+Found device 12: Tesla V100-SXM3-32GB-H
+Found device 13: Tesla V100-SXM3-32GB-H
+Found device 14: Tesla V100-SXM3-32GB-H
+Found device 15: Tesla V100-SXM3-32GB-H
+Using device 0: Tesla V100-SXM3-32GB-H
+WARNING: Data reordering done on GPU (set with QUDA_REORDER_LOCATION=GPU/CPU)
+Initializing QDP-JIT GPUs
+QDP m0,n128@circe-n008 info:  Getting GPU device properties
+QDP m0,n128@circe-n008 info:  Compute capability (major)              = 7
+QDP m0,n128@circe-n008 info:  Compute capability (minor)              = 0
+QDP m0,n128@circe-n008 info:  Divide with IEEE 754 compliant rounding = 1
+QDP m0,n128@circe-n008 info:  Sqrt with IEEE 754 compliant rounding   = 1
+QDP m0,n128@circe-n008 info:  unified addr                            = 1
+QDP m0,n128@circe-n008 info:  asyncTransfers                          = 1
+QDP m0,n128@circe-n008 info:  smem                                    = 49152
+QDP m0,n128@circe-n008 info:  max_gridx                               = 1073741824
+QDP m0,n128@circe-n008 info:  max_gridy                               = 32768
+QDP m0,n128@circe-n008 info:  max_gridz                               = 32768
+QDP m0,n128@circe-n008 info:  max_blockx                              = 1024
+QDP m0,n128@circe-n008 info:  max_blocky                              = 1024
+QDP m0,n128@circe-n008 info:  max_blockz                              = 64
+QDP m0,n128@circe-n008 info:  SM count                                = 80
+QDP m0,n128@circe-n008 info:  GPU memory: free = 33405796352 (31858.250000 MB),  total = 34089730048 (32510.500000 MB)
+QDP m0,n128@circe-n008 info:  Using device memory pool size: 28672 MB
+QDP m0,n128@circe-n008 info:  Trigger GPU evaluation
+LLVM optimization level : 3
+NVPTX Flush to zero     : 0
+Initializing QUDA memory
+Disabling GPU-Direct RDMA access
+Enabling peer-to-peer copy engine and direct load/store access
+Peer-to-peer enabled for rank 0 (gpu=0) with neighbor 1 (gpu=1) dir=0, dim=0, performance rank = (0, 0)
+Peer-to-peer enabled for rank 0 (gpu=0) with neighbor 6 (gpu=6) dir=0, dim=1, performance rank = (0, 0)
+Peer-to-peer enabled for rank 0 (gpu=0) with neighbor 1 (gpu=1) dir=1, dim=0, performance rank = (0, 0)
+Peer-to-peer enabled for rank 0 (gpu=0) with neighbor 2 (gpu=2) dir=1, dim=1, performance rank = (0, 0)
+Peer-to-peer enabled for rank 0 (gpu=0) with neighbor 8 (gpu=8) dir=1, dim=2, performance rank = (0, 0)
+WARNING: Using device memory pool allocator
+WARNING: Using pinned memory pool allocator
+WARNING: Environment variable QUDA_RESOURCE_PATH is not set.
+WARNING: Caching of tuned parameters will be disabled.
+Linkage = bool Chroma::MapObjectDiskEnv::registerAll(): registering map obj key colorvec
+0
+Monomials xml is:
+<Monomials>
+<elem>
+<Name>TWO_FLAVOR_EOPREC_CONSTDET_FERM_MONOMIAL</Name>
+
+<InvertParam>
+<invType>QUDA_CLOVER_INVERTER</invType>
+
+<CloverParams>
+<Mass>0.06477197058</Mass>
+
+<clovCoeffR>0.8648334911</clovCoeffR>
+
+<clovCoeffT>0.5271531811</clovCoeffT>
+
+<AnisoParam>
+<anisoP>true</anisoP>
+
+<t_dir>3</t_dir>
+
+<xi_0>6.012497031</xi_0>
+
+<nu>0.8055935787</nu>
+</AnisoParam>
+</CloverParams>
+
+<AntiPeriodicT>true</AntiPeriodicT>
+
+<RsdTarget>1e-07</RsdTarget>
+
+<Delta>0.1</Delta>
+
+<MaxIter>2000</MaxIter>
+
+<SilentFail>true</SilentFail>
+
+<SolverType>BICGSTAB</SolverType>
+
+<Verbose>true</Verbose>
+
+<AsymmetricLinop>true</AsymmetricLinop>
+
+<CudaReconstruct>RECONS_12</CudaReconstruct>
+
+<CudaSloppyPrecision>HALF</CudaSloppyPrecision>
+
+<CudaSloppyReconstruct>RECONS_12</CudaSloppyReconstruct>
+
+<AxialGaugeFix>false</AxialGaugeFix>
+
+<AutotuneDslash>true</AutotuneDslash>
+</InvertParam>
+
+<FermionAction>
+<FermAct>CLOVER</FermAct>
+
+<Mass>0.06477197058</Mass>
+
+<clovCoeffR>0.8648334911</clovCoeffR>
+
+<clovCoeffT>0.5271531811</clovCoeffT>
+
+<FermState>
+<Name>STOUT_FERM_STATE</Name>
+
+<rho>0.14</rho>
+
+<n_smear>2</n_smear>
+
+<orthog_dir>3</orthog_dir>
+
+<FermionBC>
+<FermBC>SIMPLE_FERMBC</FermBC>
+
+<boundary>1 1 1 -1</boundary>
+</FermionBC>
+</FermState>
+
+<AnisoParam>
+<anisoP>true</anisoP>
+
+<t_dir>3</t_dir>
+
+<xi_0>6.012497031</xi_0>
+
+<nu>0.8055935787</nu>
+</AnisoParam>
+</FermionAction>
+
+<ChronologicalPredictor>
+<Name>LAST_SOLUTION_4D_PREDICTOR</Name>
+</ChronologicalPredictor>
+
+<NamedObject>
+<monomial_id>monomial_1</monomial_id>
+</NamedObject>
+</elem>
+
+<elem>
+<Name>GAUGE_MONOMIAL</Name>
+
+<GaugeAction>
+<Name>ANISO_SPECTRUM_GAUGEACT</Name>
+
+<beta>2.8</beta>
+
+<u_s>0.8275375628</u_s>
+
+<u_t>1</u_t>
+
+<omega>0</omega>
+
+<GaugeBC>
+<Name>PERIODIC_GAUGEBC</Name>
+</GaugeBC>
+
+<AnisoParam>
+<anisoP>true</anisoP>
+
+<t_dir>3</t_dir>
+
+<xi_0>4.843629</xi_0>
+</AnisoParam>
+</GaugeAction>
+
+<NamedObject>
+<monomial_id>monomial_2</monomial_id>
+</NamedObject>
+</elem>
+</Monomials>
+
+HMC_xml is: 
+<Hamiltonian>
+<monomial_ids>
+<elem>monomial_1</elem>
+
+<elem>monomial_2</elem>
+</monomial_ids>
+</Hamiltonian>
+Integrator XML is: 
+<MDIntegrator>
+<tau0>0.5</tau0>
+
+<anisoP>true</anisoP>
+
+<t_dir>3</t_dir>
+
+<xi_mom>3</xi_mom>
+
+<Integrator>
+<Name>LCM_STS_LEAPFROG</Name>
+
+<n_steps>40</n_steps>
+
+<monomial_ids>
+<elem>monomial_1</elem>
+</monomial_ids>
+
+<SubIntegrator>
+<Name>LCM_STS_LEAPFROG</Name>
+
+<n_steps>5</n_steps>
+
+<monomial_ids>
+<elem>monomial_2</elem>
+</monomial_ids>
+</SubIntegrator>
+</Integrator>
+</MDIntegrator>
+
+Setting serial write mode for saving configurations
+InlineMeasurements are: 
+<InlineMeasurements/>
+
+Call QDP create layout
+Lattice initialized:
+  problem size = 128 128 128 256
+  layout size = 64 128 128 256
+  logical machine size = 2 4 4 4
+  subgrid size = 64 32 32 64
+  total number of nodes = 128
+  total volume = 536870912
+  subgrid volume = 4194304
+Finished init of RNG
+Finished lattice layout
+Finished with QDP create layout
+Initialize gauge field
+Gauge initialization: cfg_type = WEAK_FIELD
+Starting up a weak field config
+Gauge field successfully initialized: time= 1.010633 secs
+Gauge field reunitarization found 0 unitarity violations
+Gauge field reunitarized: time=1.10577 secs
+TwoFlavorWilsonTypeFermMonomialParams: read 
+CLOVER
+EvanOddPrecConstDetTwoFlavorWilsonTypeFermMonomial: construct CLOVER
+u0 is 1
+Read Monomial with monomial id: monomial_1
+Create monomial: GAUGE_MONOMIAL
+GaugeMonomialParams: read 
+<GaugeAction>
+      <Name>ANISO_SPECTRUM_GAUGEACT</Name>
+      <beta>2.8</beta>
+      <u_s>0.8275375628</u_s>
+      <u_t>1</u_t>
+      <omega>0</omega>
+      <GaugeBC>
+        <Name>PERIODIC_GAUGEBC</Name>
+      </GaugeBC>
+      <AnisoParam>
+        <anisoP>true</anisoP>
+        <t_dir>3</t_dir>
+        <xi_0>4.843629</xi_0>
+      </AnisoParam>
+    </GaugeAction>
+
+GaugeBC Callback: Creating PeriodicGaugeBC 
+aniso.t_dir3
+Read Monomial with monomial id: monomial_2
+ExactHamiltonian::create(): Trying to bind monomial with ID monomial_1
+ExactHamiltonian::create(): Trying to bind monomial with ID monomial_2
+Subintegrator XML is: 
+<SubIntegrator>
+      <Name>LCM_STS_LEAPFROG</Name>
+      <n_steps>5</n_steps>
+      <monomial_ids>
+        <elem>monomial_2</elem>
+      </monomial_ids>
+    </SubIntegrator>
+
+Binding Monomials
+There are 1 IDs to bind 
+Monomial with ID = monomial_2 bound
+All monomials successfully bound
+Binding Monomials
+There are 1 IDs to bind 
+Monomial with ID = monomial_1 bound
+All monomials successfully bound
+Setting dir 3 to aniso factor 0.333333333333333 originally 9
+<InlineMeasurements/>
+
+There are 0 user measurements 
+Setting Force monitoring to 1
+MC Control: About to do 1 updates
+Doing Update: 1 warm_up_p = 0
+Doing Reversibility Test this traj
+Before HMC trajectory call
+HMC_TIME: Momentum Refresh Time: 1.113649 
+TwoFlavWilson4DMonomial: resetting Predictor after field refresh
+CLOV_LINOP: Time spent in clov deriv (total) = 0
+CLOV_LINOP: Time spent in clov apply/invapply (total) = 3.150763
+HMC_TIME: Pseudofermion Refres Time: 92.721405 
+u0 is 1
+tuneDslasP = 1
+MdagMSysSolverQUDAClover:
+Working with Asymmetric LinOp
+Enabling Dslash Autotuning
+Setting Precondition stuff to defaults for not using
+Creating CloverTerm
+Inverting CloverTerm
+Creating new clover field
+Tuned block=(128,1,1), grid=(16384,2,1), shared_bytes=16385, aux=(1,1,1,1) giving 0.00 Gflop/s, 877.55 GB/s for N4quda10CopyCloverIddLi72ENS_6clover11FloatNOrderIdLi72ELi2ELb0EEENS1_11QDPJITOrderIdLi72EEEEE with out_stride=2097152,in_stride=2097152
+Tuned block=(384,1,1), grid=(5462,2,1), shared_bytes=12289, aux=(1,1,1,1) giving 0.00 Gflop/s, 912.45 GB/s for N4quda10CopyCloverIsdLi72ENS_6clover11FloatNOrderIsLi72ELi4ELb0EEENS2_IdLi72ELi2ELb0EEEEE with out_stride=2097152,in_stride=2097152
+TwoFlavWilson4DMonomial: resetting Predictor before energy calc solve
+Two Step Solve
+Null Predictor Predict Y: Leaving guess unchanged
+Tuned block=(512,1,1), grid=(4096,1,1), shared_bytes=0, aux=(1,1,1,1) giving 0.00 Gflop/s, 901.87 GB/s for N4quda15CopyColorSpinorIddLi4ELi3ENS_18CopyColorSpinorArgINS_11colorspinor11FloatNOrderIdLi4ELi3ELi2ELb0ELb0EEENS2_16QDPJITDiracOrderIdLi4ELi3EEEEEEE with out_stride=2097152,in_stride=2097152,NonRelBasis
+Tuned block=(832,1,1), grid=(158,1,1), shared_bytes=0, aux=(1,1,1,1) giving 261.22 Gflop/s, 1044.86 GB/s for N4quda4blas5Norm2Id7double2S2_EE with vol=2097152,stride=2097152,precision=8,Ns=4,Nc=3
+WARNING: Device reductions on non-native fields is not supported
+
+Source: CPU = 0, CUDA copy = 8.6762e+09
+WARNING: Device reductions on non-native fields is not supported
+
+Solution: CPU = 0, CUDA copy = 0
+Prepared source = 8.6762e+09
+Prepared solution = 0
+Prepared source post mass rescale = 8.6762e+09
+Creating a BiCGstab solver
+Tuned block=(352,1,1), grid=(155,1,1), shared_bytes=0, aux=(1,1,1,1) giving 13.80 Gflop/s, 331.11 GB/s for N4quda4PackIdLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=8,Ns=4,Nc=3,comm=1111,topo=2444,dagger,nFace=1,device-device
+Tuned block=(160,1,1), grid=(13108,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 734.34 Gflop/s, 1150.59 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=interior,comm=1111,commDim=1111,dagger
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=4097, aux=(1,1,1,1) giving 547.88 Gflop/s, 922.75 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,dagger
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=8193, aux=(1,1,1,1) giving 563.04 Gflop/s, 948.27 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,dagger
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=3277, aux=(1,1,1,1) giving 560.15 Gflop/s, 943.42 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,dagger
+Tuned block=(96,1,1), grid=(683,1,1), shared_bytes=24577, aux=(1,1,1,1) giving 63.09 Gflop/s, 106.25 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,dagger
+Tuned block=(128,1,1), grid=(3072,1,1), shared_bytes=6145, aux=(1,1,1,1) giving 257.43 Gflop/s, 433.57 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,dagger
+Tuned block=(64,1,1), grid=(12,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 1.06 Gflop/s, 25.50 GB/s for N4quda4PackIdLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=8,Ns=4,Nc=3,comm=1111,topo=2444,dagger,kernelPackT,nFace=1,host-host
+Tuned block=(16,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 82.29 Gflop/s, 138.59 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,dagger,zero_copy,p2p=0
+Tuned block=(16,1,1), grid=(8192,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 83.09 Gflop/s, 139.94 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,dagger,zero_copy,p2p=0
+Tuned block=(16,1,1), grid=(8192,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 83.07 Gflop/s, 139.90 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,dagger,zero_copy,p2p=0
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 57.10 Gflop/s, 96.18 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,dagger,zero_copy,p2p=0
+Tuned block=(384,1,1), grid=(1024,1,1), shared_bytes=32769, aux=(1,1,1,1) giving 75.96 Gflop/s, 127.93 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,dagger,zero_copy,p2p=0
+Tuned block=(64,1,1), grid=(12,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 1.59 Gflop/s, 38.18 GB/s for N4quda4PackIdLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=8,Ns=4,Nc=3,comm=1111,topo=2444,dagger,kernelPackT,nFace=1,host-device
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 82.29 Gflop/s, 138.59 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,dagger,zero_copy,p2p=1
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=0, aux=(1,1,1,1) giving 155.04 Gflop/s, 261.12 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,dagger,zero_copy,p2p=1
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=5783, aux=(1,1,1,1) giving 561.23 Gflop/s, 945.23 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,dagger,zero_copy,p2p=1
+Tuned block=(96,1,1), grid=(683,1,1), shared_bytes=24577, aux=(1,1,1,1) giving 63.16 Gflop/s, 106.37 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,dagger,zero_copy,p2p=1
+Tuned block=(384,1,1), grid=(1024,1,1), shared_bytes=32769, aux=(1,1,1,1) giving 144.56 Gflop/s, 243.47 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,dagger,zero_copy,p2p=1
+Tuned block=(480,1,1), grid=(160,1,1), shared_bytes=0, aux=(1,1,1,1) giving 15.62 Gflop/s, 374.89 GB/s for N4quda4PackIdLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=8,Ns=4,Nc=3,comm=1111,topo=2444,dagger,kernelPackT,nFace=1,device-remote
+Tuned block=(64,1,1), grid=(12,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 1.64 Gflop/s, 39.26 GB/s for N4quda4PackIdLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=8,Ns=4,Nc=3,comm=1111,topo=2444,dagger,kernelPackT,nFace=1,host-remote
+Tuned block=(32,1,1), grid=(1,1,1), shared_bytes=0, aux=(0,2,0,1) giving 354.98 Gflop/s, 560.50 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy,commDim=1111,dagger,topo=2444,p2p=3,gdr=0,pol=110000111100000
+Tuned block=(32,1,1), grid=(65536,1,1), shared_bytes=19661, aux=(0,2,0,1) giving 751.01 Gflop/s, 1129.72 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=interior,comm=1111,commDim=1111,xpay,dagger
+Tuned block=(96,1,1), grid=(683,1,1), shared_bytes=24577, aux=(0,2,0,1) giving 300.14 Gflop/s, 847.45 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,xpay,dagger
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=9831, aux=(0,2,0,1) giving 337.36 Gflop/s, 952.56 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,xpay,dagger
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=9831, aux=(0,2,0,1) giving 333.06 Gflop/s, 940.41 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,xpay,dagger
+Tuned block=(16,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 41.20 Gflop/s, 116.33 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,xpay,dagger
+Tuned block=(160,1,1), grid=(2458,1,1), shared_bytes=24577, aux=(0,2,0,1) giving 146.72 Gflop/s, 414.28 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,xpay,dagger
+Tuned block=(16,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 24.66 Gflop/s, 69.62 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,xpay,dagger,zero_copy,p2p=0
+Tuned block=(80,1,1), grid=(1639,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 24.80 Gflop/s, 70.02 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,xpay,dagger,zero_copy,p2p=0
+Tuned block=(48,1,1), grid=(2731,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 24.79 Gflop/s, 69.99 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,xpay,dagger,zero_copy,p2p=0
+Tuned block=(16,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 24.38 Gflop/s, 68.84 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,xpay,dagger,zero_copy,p2p=0
+Tuned block=(256,1,1), grid=(1536,1,1), shared_bytes=19661, aux=(0,2,0,1) giving 24.18 Gflop/s, 68.28 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,xpay,dagger,zero_copy,p2p=0
+Tuned block=(16,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 24.65 Gflop/s, 69.59 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,xpay,dagger,zero_copy,p2p=1
+Tuned block=(96,1,1), grid=(1366,1,1), shared_bytes=32769, aux=(0,2,0,1) giving 48.96 Gflop/s, 138.25 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,xpay,dagger,zero_copy,p2p=1
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=9831, aux=(0,2,0,1) giving 333.06 Gflop/s, 940.41 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,xpay,dagger,zero_copy,p2p=1
+Tuned block=(16,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 41.25 Gflop/s, 116.47 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,xpay,dagger,zero_copy,p2p=1
+Tuned block=(160,1,1), grid=(2458,1,1), shared_bytes=19661, aux=(0,2,0,1) giving 53.66 Gflop/s, 151.52 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,xpay,dagger,zero_copy,p2p=1
+Tuned block=(32,1,1), grid=(1,1,1), shared_bytes=0, aux=(0,2,0,1) giving 380.06 Gflop/s, 584.71 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy,commDim=1111,xpay,dagger,topo=2444,p2p=3,gdr=0,pol=110000111100000
+Tuned block=(544,1,1), grid=(160,1,1), shared_bytes=0, aux=(0,2,0,1) giving 169.15 Gflop/s, 1014.90 GB/s for N4quda4blas11axpbyzNorm2Id7double2S2_EE with vol=2097152,stride=2097152,precision=8,Ns=4,Nc=3
+Tuned block=(32,1,1), grid=(1,1,1), shared_bytes=0, aux=(0,2,0,1) giving 0.00 Gflop/s, 969.71 GB/s for cudaMemcpyAsyncDeviceToDevice with copy,copy_quda.cu,133
+Tuned block=(736,1,1), grid=(158,1,1), shared_bytes=0, aux=(0,2,0,1) giving 0.00 Gflop/s, 960.98 GB/s for copyKernel with dst=vol=2097152,stride=2097152,precision=2,Ns=4,Nc=3,src=vol=2097152,stride=2097152,precision=8,Ns=4,Nc=3
+BiCGstab: 0 iterations, <r,r> = 8.676201e+09, |r|/|b| = 1.000000e+00
+Tuned block=(32,1,1), grid=(1,1,1), shared_bytes=0, aux=(0,2,0,1) giving 0.00 Gflop/s, 945.23 GB/s for cudaMemcpyAsyncDeviceToDevice with copy,copy_quda.cu,133
+Tuned block=(32,1,1), grid=(1,1,1), shared_bytes=0, aux=(0,2,0,1) giving 0.00 Gflop/s, 712.35 GB/s for cudaMemcpyAsyncDeviceToDevice with copy,copy_quda.cu,135
+Tuned block=(640,1,1), grid=(160,1,1), shared_bytes=0, aux=(0,2,0,1) giving 43.97 Gflop/s, 293.13 GB/s for N4quda4PackIsLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=2,Ns=4,Nc=3,comm=1111,topo=2444,dagger,nFace=1,device-device
+Tuned block=(512,1,1), grid=(4096,1,1), shared_bytes=32769, aux=(0,2,0,1) giving 2809.29 Gflop/s, 1160.93 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=interior,comm=1111,commDim=1111,dagger
+Tuned block=(96,1,1), grid=(683,1,1), shared_bytes=7562, aux=(0,2,0,1) giving 1609.41 Gflop/s, 720.00 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,dagger
+Tuned block=(64,1,1), grid=(2048,1,1), shared_bytes=4682, aux=(0,2,0,1) giving 1797.78 Gflop/s, 804.27 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,dagger
+Tuned block=(128,1,1), grid=(1024,1,1), shared_bytes=10923, aux=(0,2,0,1) giving 1655.05 Gflop/s, 740.42 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,dagger
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 169.35 Gflop/s, 75.76 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,dagger
+Tuned block=(128,1,1), grid=(3072,1,1), shared_bytes=16385, aux=(0,2,0,1) giving 733.88 Gflop/s, 328.32 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,dagger
+Tuned block=(96,1,1), grid=(12,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 3.85 Gflop/s, 25.66 GB/s for N4quda4PackIsLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=2,Ns=4,Nc=3,comm=1111,topo=2444,dagger,kernelPackT,nFace=1,host-host
+Tuned block=(48,1,1), grid=(1366,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 271.39 Gflop/s, 121.41 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,dagger,zero_copy,p2p=0
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 278.21 Gflop/s, 124.46 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,dagger,zero_copy,p2p=0
+Tuned block=(48,1,1), grid=(2731,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 278.12 Gflop/s, 124.42 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,dagger,zero_copy,p2p=0
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 155.73 Gflop/s, 69.67 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,dagger,zero_copy,p2p=0
+Tuned block=(768,1,1), grid=(512,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 245.82 Gflop/s, 109.97 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,dagger,zero_copy,p2p=0
+Tuned block=(96,1,1), grid=(12,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 6.08 Gflop/s, 40.51 GB/s for N4quda4PackIsLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=2,Ns=4,Nc=3,comm=1111,topo=2444,dagger,kernelPackT,nFace=1,host-device
+Tuned block=(48,1,1), grid=(1366,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 271.39 Gflop/s, 121.41 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,dagger,zero_copy,p2p=1
+Tuned block=(128,1,1), grid=(1024,1,1), shared_bytes=24577, aux=(0,2,0,1) giving 528.70 Gflop/s, 236.52 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,dagger,zero_copy,p2p=1
+Tuned block=(128,1,1), grid=(1024,1,1), shared_bytes=6145, aux=(0,2,0,1) giving 1655.05 Gflop/s, 740.42 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,dagger,zero_copy,p2p=1
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 169.48 Gflop/s, 75.82 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,dagger,zero_copy,p2p=1
+Tuned block=(576,1,1), grid=(683,1,1), shared_bytes=32769, aux=(0,2,0,1) giving 459.75 Gflop/s, 205.68 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,dagger,zero_copy,p2p=1
+Tuned block=(480,1,1), grid=(160,1,1), shared_bytes=0, aux=(0,2,0,1) giving 46.08 Gflop/s, 307.20 GB/s for N4quda4PackIsLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=2,Ns=4,Nc=3,comm=1111,topo=2444,dagger,kernelPackT,nFace=1,device-remote
+Tuned block=(96,1,1), grid=(12,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 6.27 Gflop/s, 41.78 GB/s for N4quda4PackIsLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=2,Ns=4,Nc=3,comm=1111,topo=2444,dagger,kernelPackT,nFace=1,host-remote
+Tuned block=(32,1,1), grid=(1,1,1), shared_bytes=0, aux=(0,2,0,1) giving 1160.34 Gflop/s, 483.47 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy,commDim=1111,dagger,topo=2444,p2p=3,gdr=0,pol=110000111100000
+Tuned block=(512,1,1), grid=(4096,1,1), shared_bytes=24577, aux=(0,2,0,1) giving 2670.12 Gflop/s, 1059.39 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=interior,comm=1111,commDim=1111,xpay,dagger
+Tuned block=(64,1,1), grid=(1024,1,1), shared_bytes=3781, aux=(0,2,0,1) giving 1165.71 Gflop/s, 880.00 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,xpay,dagger
+Tuned block=(416,1,1), grid=(316,1,1), shared_bytes=0, aux=(0,2,0,1) giving 1044.48 Gflop/s, 788.48 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,xpay,dagger
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=4097, aux=(0,2,0,1) giving 985.36 Gflop/s, 743.85 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,xpay,dagger
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 116.57 Gflop/s, 88.00 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,xpay,dagger
+Tuned block=(128,1,1), grid=(3072,1,1), shared_bytes=19661, aux=(0,2,0,1) giving 390.70 Gflop/s, 294.94 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,xpay,dagger
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 82.22 Gflop/s, 62.07 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,xpay,dagger,zero_copy,p2p=0
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 84.40 Gflop/s, 63.71 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,xpay,dagger,zero_copy,p2p=0
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 84.29 Gflop/s, 63.63 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,xpay,dagger,zero_copy,p2p=0
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 79.90 Gflop/s, 60.32 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,xpay,dagger,zero_copy,p2p=0
+Tuned block=(512,1,1), grid=(768,1,1), shared_bytes=0, aux=(0,2,0,1) giving 79.15 Gflop/s, 59.75 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,xpay,dagger,zero_copy,p2p=0
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 82.48 Gflop/s, 62.26 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,xpay,dagger,zero_copy,p2p=1
+Tuned block=(128,1,1), grid=(1024,1,1), shared_bytes=32769, aux=(0,2,0,1) giving 161.99 Gflop/s, 122.28 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,xpay,dagger,zero_copy,p2p=1
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=4916, aux=(0,2,0,1) giving 989.09 Gflop/s, 746.67 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,xpay,dagger,zero_copy,p2p=1
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 117.09 Gflop/s, 88.39 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,xpay,dagger,zero_copy,p2p=1
+Tuned block=(608,1,1), grid=(647,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 171.34 Gflop/s, 129.34 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,xpay,dagger,zero_copy,p2p=1
+Tuned block=(32,1,1), grid=(1,1,1), shared_bytes=0, aux=(0,2,0,1) giving 1184.86 Gflop/s, 481.03 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy,commDim=1111,xpay,dagger,topo=2444,p2p=3,gdr=0,pol=110000111100000
+Tuned block=(704,1,1), grid=(159,1,1), shared_bytes=0, aux=(0,2,0,1) giving 914.46 Gflop/s, 914.46 GB/s for N4quda4blas4CdotI7double26float26float4EE with vol=2097152,stride=2097152,precision=2,Ns=4,Nc=3
+Tuned block=(608,1,1), grid=(159,1,1), shared_bytes=0, aux=(0,2,0,1) giving 600.64 Gflop/s, 900.95 GB/s for N4quda4blas6caxpy_I6float26float4EE with vol=2097152,stride=2097152,precision=2,Ns=4,Nc=3
+Tuned block=(704,1,1), grid=(157,1,1), shared_bytes=0, aux=(0,2,0,1) giving 1359.04 Gflop/s, 906.03 GB/s for N4quda4blas9CdotNormAI7double36float26float4EE with vol=2097152,stride=2097152,precision=2,Ns=4,Nc=3
+Tuned block=(256,1,1), grid=(160,1,1), shared_bytes=0, aux=(0,2,0,1) giving 650.86 Gflop/s, 940.13 GB/s for N4quda4blas31caxpbypzYmbwcDotProductUYNormY_I7double37double2S3_EE with vol=2097152,stride=2097152,precision=2,Ns=4,Nc=3,vol=2097152,stride=2097152,precision=8,Ns=4,Nc=3
+BiCGstab: 1 iterations, <r,r> = 2.754654e+08, |r|/|b| = 1.781840e-01
+Tuned block=(608,1,1), grid=(153,1,1), shared_bytes=0, aux=(0,2,0,1) giving 865.48 Gflop/s, 865.48 GB/s for N4quda4blas11caxpbypczw_I6float26float4EE with vol=2097152,stride=2097152,precision=2,Ns=4,Nc=3
+Tuned block=(544,1,1), grid=(160,1,1), shared_bytes=0, aux=(0,2,0,1) giving 128.19 Gflop/s, 1025.48 GB/s for N4quda4blas7axpbyz_I7double2S2_EE with vol=2097152,stride=2097152,precision=8,Ns=4,Nc=3
+BiCGstab: 2 iterations, <r,r> = 4.243602e+07, |r|/|b| = 6.993627e-02
+BiCGstab: 3 iterations, <r,r> = 3.617445e+07, |r|/|b| = 6.457080e-02
+BiCGstab: 4 iterations, <r,r> = 7.654322e+06, |r|/|b| = 2.970220e-02
+BiCGstab: 5 iterations, <r,r> = 2.511958e+06, |r|/|b| = 1.701537e-02
+BiCGstab: 6 iterations, <r,r> = 1.962688e+06, |r|/|b| = 1.504045e-02
+BiCGstab: 7 iterations, <r,r> = 2.560427e+06, |r|/|b| = 1.717874e-02
+BiCGstab: 8 iterations, <r,r> = 2.425810e+06, |r|/|b| = 1.672105e-02
+BiCGstab: 9 iterations, <r,r> = 2.124895e+06, |r|/|b| = 1.564962e-02
+BiCGstab: 10 iterations, <r,r> = 4.344017e+05, |r|/|b| = 7.075888e-03
+BiCGstab: 11 iterations, <r,r> = 1.815901e+05, |r|/|b| = 4.574896e-03
+BiCGstab: 12 iterations, <r,r> = 2.515833e+04, |r|/|b| = 1.702849e-03
+BiCGstab: 13 iterations, <r,r> = 1.124658e+04, |r|/|b| = 1.138532e-03
+BiCGstab: 14 iterations, <r,r> = 4.318881e+03, |r|/|b| = 7.055386e-04
+BiCGstab: 15 iterations, <r,r> = 1.422045e+03, |r|/|b| = 4.048479e-04
+BiCGstab: 16 iterations, <r,r> = 9.757401e+02, |r|/|b| = 3.353531e-04
+BiCGstab: 17 iterations, <r,r> = 4.957512e+02, |r|/|b| = 2.390381e-04
+BiCGstab: 18 iterations, <r,r> = 2.244496e+02, |r|/|b| = 1.608402e-04
+BiCGstab: 19 iterations, <r,r> = 7.764132e+01, |r|/|b| = 9.459793e-05
+BiCGstab: 20 iterations, <r,r> = 4.957080e+01, |r|/|b| = 7.558718e-05
+BiCGstab: 21 iterations, <r,r> = 2.669754e+01, |r|/|b| = 5.547162e-05
+BiCGstab: 22 iterations, <r,r> = 2.903450e+01, |r|/|b| = 5.784854e-05
+BiCGstab: 23 iterations, <r,r> = 1.169232e+01, |r|/|b| = 3.671011e-05
+BiCGstab: 24 iterations, <r,r> = 4.834727e+00, |r|/|b| = 2.360593e-05
+BiCGstab: 25 iterations, <r,r> = 1.557269e+00, |r|/|b| = 1.339729e-05
+BiCGstab: 26 iterations, <r,r> = 9.009826e-01, |r|/|b| = 1.019045e-05
+BiCGstab: 27 iterations, <r,r> = 6.483844e-01, |r|/|b| = 8.644731e-06
+BiCGstab: 28 iterations, <r,r> = 4.336576e-01, |r|/|b| = 7.069825e-06
+BiCGstab: 29 iterations, <r,r> = 4.383395e-01, |r|/|b| = 7.107887e-06
+BiCGstab: 30 iterations, <r,r> = 1.401059e-01, |r|/|b| = 4.018495e-06
+BiCGstab: 31 iterations, <r,r> = 7.292099e-01, |r|/|b| = 9.167723e-06
+BiCGstab: 32 iterations, <r,r> = 3.880689e-02, |r|/|b| = 2.114899e-06
+BiCGstab: 33 iterations, <r,r> = 2.847976e-02, |r|/|b| = 1.811771e-06
+BiCGstab: 34 iterations, <r,r> = 1.640659e-02, |r|/|b| = 1.375132e-06
+BiCGstab: 35 iterations, <r,r> = 1.107471e-02, |r|/|b| = 1.129799e-06
+BiCGstab: 36 iterations, <r,r> = 1.095989e-02, |r|/|b| = 1.123927e-06
+BiCGstab: 37 iterations, <r,r> = 1.359151e-02, |r|/|b| = 1.251610e-06
+BiCGstab: 38 iterations, <r,r> = 4.942531e-03, |r|/|b| = 7.547618e-07
+BiCGstab: 39 iterations, <r,r> = 1.915666e-03, |r|/|b| = 4.698888e-07
+BiCGstab: 40 iterations, <r,r> = 1.143340e-03, |r|/|b| = 3.630136e-07
+BiCGstab: 41 iterations, <r,r> = 1.255947e-03, |r|/|b| = 3.804704e-07
+BiCGstab: 42 iterations, <r,r> = 6.616386e-04, |r|/|b| = 2.761504e-07
+BiCGstab: 43 iterations, <r,r> = 3.595701e-04, |r|/|b| = 2.035762e-07
+BiCGstab: 44 iterations, <r,r> = 1.543303e-04, |r|/|b| = 1.333708e-07
+BiCGstab: 45 iterations, <r,r> = 1.487420e-04, |r|/|b| = 1.309339e-07
+BiCGstab: 46 iterations, <r,r> = 7.408979e-05, |r|/|b| = 9.240902e-08
+BiCGstab: Reliable updates = 6
+BiCGstab: Convergence at 46 iterations, L2 relative residual: iterated = 9.240902e-08 (requested = 1.000000e-07)
+Solution = 3.22136e+09
+Tuned block=(128,1,1), grid=(16384,1,1), shared_bytes=0, aux=(0,2,0,1) giving 0.00 Gflop/s, 886.62 GB/s for N4quda15CopyColorSpinorIddLi4ELi3ENS_18CopyColorSpinorArgINS_11colorspinor16QDPJITDiracOrderIdLi4ELi3EEENS2_11FloatNOrderIdLi4ELi3ELi2ELb0ELb0EEEEEEE with out_stride=2097152,in_stride=2097152,RelBasis
+WARNING: Device reductions on non-native fields is not supported
+
+Reconstructed: CUDA solution = 3.22136e+09, CPU copy = 0
+QUDA_BICGSTAB_CLOVER_SOLVER: time=194.751145 s	Performance=566.700786902506 GFLOPS	Total Time (incl. load gauge)=465.228405 s
+Null Predictor Predict X: Leaving guess unchanged
+WARNING: Device reductions on non-native fields is not supported
+
+Source: CPU = 0, CUDA copy = 3.22136e+09
+WARNING: Device reductions on non-native fields is not supported
+
+Solution: CPU = 0, CUDA copy = 0
+Prepared source = 3.22136e+09
+Prepared solution = 0
+Prepared source post mass rescale = 3.22136e+09
+Creating a BiCGstab solver
+Tuned block=(480,1,1), grid=(160,1,1), shared_bytes=0, aux=(0,2,0,1) giving 14.13 Gflop/s, 339.24 GB/s for N4quda4PackIdLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=8,Ns=4,Nc=3,comm=1111,topo=2444,nFace=1,device-device
+Tuned block=(160,1,1), grid=(13108,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 747.80 Gflop/s, 1171.67 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=interior,comm=1111,commDim=1111
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=3390, aux=(0,2,0,1) giving 551.34 Gflop/s, 928.56 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=8193, aux=(0,2,0,1) giving 565.22 Gflop/s, 951.94 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=5783, aux=(0,2,0,1) giving 561.95 Gflop/s, 946.44 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=10923, aux=(0,2,0,1) giving 57.26 Gflop/s, 96.44 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111
+Tuned block=(320,1,1), grid=(1229,1,1), shared_bytes=16385, aux=(0,2,0,1) giving 251.73 Gflop/s, 423.97 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111
+Tuned block=(64,1,1), grid=(12,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 1.09 Gflop/s, 26.26 GB/s for N4quda4PackIdLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=8,Ns=4,Nc=3,comm=1111,topo=2444,kernelPackT,nFace=1,host-host
+Tuned block=(16,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 82.52 Gflop/s, 138.98 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,zero_copy,p2p=0
+Tuned block=(16,1,1), grid=(8192,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 83.16 Gflop/s, 140.06 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,zero_copy,p2p=0
+Tuned block=(16,1,1), grid=(8192,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 83.10 Gflop/s, 139.95 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,zero_copy,p2p=0
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 53.69 Gflop/s, 90.42 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,zero_copy,p2p=0
+Tuned block=(384,1,1), grid=(1024,1,1), shared_bytes=24577, aux=(0,2,0,1) giving 75.45 Gflop/s, 127.08 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,zero_copy,p2p=0
+Tuned block=(64,1,1), grid=(12,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 1.64 Gflop/s, 39.24 GB/s for N4quda4PackIdLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=8,Ns=4,Nc=3,comm=1111,topo=2444,kernelPackT,nFace=1,host-device
+Tuned block=(16,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 82.47 Gflop/s, 138.90 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,zero_copy,p2p=1
+Tuned block=(96,1,1), grid=(1366,1,1), shared_bytes=19661, aux=(0,2,0,1) giving 154.93 Gflop/s, 260.94 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,zero_copy,p2p=1
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=4682, aux=(0,2,0,1) giving 562.67 Gflop/s, 947.66 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,zero_copy,p2p=1
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=10923, aux=(0,2,0,1) giving 57.24 Gflop/s, 96.40 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,zero_copy,p2p=1
+Tuned block=(384,1,1), grid=(1024,1,1), shared_bytes=19661, aux=(0,2,0,1) giving 142.31 Gflop/s, 239.67 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,zero_copy,p2p=1
+Tuned block=(448,1,1), grid=(160,1,1), shared_bytes=0, aux=(0,2,0,1) giving 15.62 Gflop/s, 374.89 GB/s for N4quda4PackIdLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=8,Ns=4,Nc=3,comm=1111,topo=2444,kernelPackT,nFace=1,device-remote
+Tuned block=(64,1,1), grid=(12,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 1.70 Gflop/s, 40.80 GB/s for N4quda4PackIdLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=8,Ns=4,Nc=3,comm=1111,topo=2444,kernelPackT,nFace=1,host-remote
+Tuned block=(32,1,1), grid=(1,1,1), shared_bytes=0, aux=(1,2,0,1) giving 348.40 Gflop/s, 550.10 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy,commDim=1111,topo=2444,p2p=3,gdr=0,pol=110000111100000
+Tuned block=(32,1,1), grid=(65536,1,1), shared_bytes=19661, aux=(1,2,0,1) giving 752.40 Gflop/s, 1131.81 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=interior,comm=1111,commDim=1111,xpay
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=9831, aux=(1,2,0,1) giving 302.92 Gflop/s, 855.31 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,xpay
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=9831, aux=(1,2,0,1) giving 336.49 Gflop/s, 950.10 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,xpay
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=10923, aux=(1,2,0,1) giving 334.77 Gflop/s, 945.23 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,xpay
+Tuned block=(16,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(1,2,0,1) giving 40.80 Gflop/s, 115.20 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,xpay
+Tuned block=(160,1,1), grid=(2458,1,1), shared_bytes=16385, aux=(1,2,0,1) giving 146.34 Gflop/s, 413.20 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,xpay
+Tuned block=(16,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(1,2,0,1) giving 24.67 Gflop/s, 69.65 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,xpay,zero_copy,p2p=0
+Tuned block=(48,1,1), grid=(2731,1,1), shared_bytes=49153, aux=(1,2,0,1) giving 24.80 Gflop/s, 70.04 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,xpay,zero_copy,p2p=0
+Tuned block=(64,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(1,2,0,1) giving 24.80 Gflop/s, 70.01 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,xpay,zero_copy,p2p=0
+Tuned block=(16,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(1,2,0,1) giving 24.40 Gflop/s, 68.90 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,xpay,zero_copy,p2p=0
+Tuned block=(256,1,1), grid=(1536,1,1), shared_bytes=0, aux=(1,2,0,1) giving 24.18 Gflop/s, 68.28 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,xpay,zero_copy,p2p=0
+Tuned block=(16,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(1,2,0,1) giving 24.67 Gflop/s, 69.66 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,xpay,zero_copy,p2p=1
+Tuned block=(96,1,1), grid=(1366,1,1), shared_bytes=32769, aux=(1,2,0,1) giving 48.97 Gflop/s, 138.27 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,xpay,zero_copy,p2p=1
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=12289, aux=(1,2,0,1) giving 334.34 Gflop/s, 944.02 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,xpay,zero_copy,p2p=1
+Tuned block=(16,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(1,2,0,1) giving 40.88 Gflop/s, 115.42 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,xpay,zero_copy,p2p=1
+Tuned block=(160,1,1), grid=(2458,1,1), shared_bytes=19661, aux=(1,2,0,1) giving 53.63 Gflop/s, 151.42 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,xpay,zero_copy,p2p=1
+Tuned block=(32,1,1), grid=(1,1,1), shared_bytes=0, aux=(0,2,0,1) giving 363.55 Gflop/s, 559.31 GB/s for N4quda12WilsonCloverIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy,commDim=1111,xpay,topo=2444,p2p=3,gdr=0,pol=110000111100000
+BiCGstab: 0 iterations, <r,r> = 3.221364e+09, |r|/|b| = 1.000000e+00
+Tuned block=(512,1,1), grid=(160,1,1), shared_bytes=0, aux=(0,2,0,1) giving 44.48 Gflop/s, 296.53 GB/s for N4quda4PackIsLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=2,Ns=4,Nc=3,comm=1111,topo=2444,nFace=1,device-device
+Tuned block=(128,1,1), grid=(16384,1,1), shared_bytes=19661, aux=(0,2,0,1) giving 2821.81 Gflop/s, 1166.11 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=interior,comm=1111,commDim=1111
+Tuned block=(64,1,1), grid=(1024,1,1), shared_bytes=3390, aux=(0,2,0,1) giving 1696.74 Gflop/s, 759.07 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111
+Tuned block=(128,1,1), grid=(1024,1,1), shared_bytes=0, aux=(0,2,0,1) giving 1805.20 Gflop/s, 807.59 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=3781, aux=(0,2,0,1) giving 1703.35 Gflop/s, 762.02 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 169.94 Gflop/s, 76.02 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111
+Tuned block=(192,1,1), grid=(2048,1,1), shared_bytes=24577, aux=(0,2,0,1) giving 734.09 Gflop/s, 328.41 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111
+Tuned block=(96,1,1), grid=(12,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 3.86 Gflop/s, 25.72 GB/s for N4quda4PackIsLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=2,Ns=4,Nc=3,comm=1111,topo=2444,kernelPackT,nFace=1,host-host
+Tuned block=(48,1,1), grid=(1366,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 271.39 Gflop/s, 121.41 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,zero_copy,p2p=0
+Tuned block=(48,1,1), grid=(2731,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 278.12 Gflop/s, 124.42 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,zero_copy,p2p=0
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 278.92 Gflop/s, 124.78 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,zero_copy,p2p=0
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 155.79 Gflop/s, 69.69 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,zero_copy,p2p=0
+Tuned block=(768,1,1), grid=(512,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 244.97 Gflop/s, 109.59 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,zero_copy,p2p=0
+Tuned block=(96,1,1), grid=(12,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 6.12 Gflop/s, 40.81 GB/s for N4quda4PackIsLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=2,Ns=4,Nc=3,comm=1111,topo=2444,kernelPackT,nFace=1,host-device
+Tuned block=(48,1,1), grid=(1366,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 271.90 Gflop/s, 121.64 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,zero_copy,p2p=1
+Tuned block=(192,1,1), grid=(683,1,1), shared_bytes=32769, aux=(0,2,0,1) giving 528.70 Gflop/s, 236.52 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,zero_copy,p2p=1
+Tuned block=(128,1,1), grid=(1024,1,1), shared_bytes=6554, aux=(0,2,0,1) giving 1703.35 Gflop/s, 762.02 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,zero_copy,p2p=1
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 169.54 Gflop/s, 75.85 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,zero_copy,p2p=1
+Tuned block=(576,1,1), grid=(683,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 461.53 Gflop/s, 206.47 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,zero_copy,p2p=1
+Tuned block=(736,1,1), grid=(160,1,1), shared_bytes=0, aux=(0,2,0,1) giving 45.93 Gflop/s, 306.18 GB/s for N4quda4PackIsLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=2,Ns=4,Nc=3,comm=1111,topo=2444,kernelPackT,nFace=1,device-remote
+Tuned block=(96,1,1), grid=(12,1,1), shared_bytes=49153, aux=(0,2,0,1) giving 6.28 Gflop/s, 41.85 GB/s for N4quda4PackIsLi3ELb1EEE with policy_kernel,vol=2097152,stride=2097152,precision=2,Ns=4,Nc=3,comm=1111,topo=2444,kernelPackT,nFace=1,host-remote
+Tuned block=(32,1,1), grid=(1,1,1), shared_bytes=0, aux=(1,1,0,1) giving 1039.43 Gflop/s, 433.10 GB/s for N4quda26WilsonCloverPreconditionedIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy,commDim=1111,topo=2444,p2p=3,gdr=0,pol=110000111100000
+Tuned block=(512,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(1,1,0,1) giving 2676.37 Gflop/s, 1061.87 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=interior,comm=1111,commDim=1111,xpay
+Tuned block=(64,1,1), grid=(1024,1,1), shared_bytes=4916, aux=(1,1,0,1) giving 1318.79 Gflop/s, 995.56 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,xpay
+Tuned block=(64,1,1), grid=(2048,1,1), shared_bytes=4916, aux=(1,1,0,1) giving 1052.90 Gflop/s, 794.84 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,xpay
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=4916, aux=(1,1,0,1) giving 977.98 Gflop/s, 738.28 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,xpay
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(1,1,0,1) giving 116.36 Gflop/s, 87.84 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,xpay
+Tuned block=(128,1,1), grid=(3072,1,1), shared_bytes=16385, aux=(1,1,0,1) giving 388.76 Gflop/s, 293.48 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,xpay
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(1,1,0,1) giving 82.37 Gflop/s, 62.18 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,xpay,zero_copy,p2p=0
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(1,1,0,1) giving 84.23 Gflop/s, 63.59 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,xpay,zero_copy,p2p=0
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(1,1,0,1) giving 84.37 Gflop/s, 63.69 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,xpay,zero_copy,p2p=0
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(1,1,0,1) giving 80.10 Gflop/s, 60.47 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,xpay,zero_copy,p2p=0
+Tuned block=(512,1,1), grid=(768,1,1), shared_bytes=32769, aux=(1,1,0,1) giving 79.14 Gflop/s, 59.74 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,xpay,zero_copy,p2p=0
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(1,1,0,1) giving 82.37 Gflop/s, 62.18 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,xpay,zero_copy,p2p=1
+Tuned block=(128,1,1), grid=(1024,1,1), shared_bytes=32769, aux=(1,1,0,1) giving 161.68 Gflop/s, 122.06 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,xpay,zero_copy,p2p=1
+Tuned block=(32,1,1), grid=(4096,1,1), shared_bytes=5174, aux=(1,1,0,1) giving 974.33 Gflop/s, 735.52 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,xpay,zero_copy,p2p=1
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(1,1,0,1) giving 116.05 Gflop/s, 87.61 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,xpay,zero_copy,p2p=1
+Tuned block=(608,1,1), grid=(647,1,1), shared_bytes=0, aux=(1,1,0,1) giving 171.30 Gflop/s, 129.32 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,xpay,zero_copy,p2p=1
+Tuned block=(32,1,1), grid=(1,1,1), shared_bytes=0, aux=(0,1,0,1) giving 1257.31 Gflop/s, 510.45 GB/s for N4quda12WilsonCloverIsLi4ELi3ENS_15WilsonCloverArgIsLi3EL21QudaReconstructType_s12ELb0EEEEE with policy,commDim=1111,xpay,topo=2444,p2p=3,gdr=0,pol=110000111100000
+BiCGstab: 1 iterations, <r,r> = 2.051622e+08, |r|/|b| = 2.523648e-01
+BiCGstab: 2 iterations, <r,r> = 6.304891e+08, |r|/|b| = 4.424039e-01
+BiCGstab: 3 iterations, <r,r> = 5.625592e+07, |r|/|b| = 1.321491e-01
+BiCGstab: 4 iterations, <r,r> = 1.300017e+07, |r|/|b| = 6.352646e-02
+BiCGstab: 5 iterations, <r,r> = 2.425859e+07, |r|/|b| = 8.677866e-02
+BiCGstab: 6 iterations, <r,r> = 2.500646e+06, |r|/|b| = 2.786161e-02
+BiCGstab: 7 iterations, <r,r> = 1.031212e+06, |r|/|b| = 1.789180e-02
+BiCGstab: 8 iterations, <r,r> = 6.783276e+06, |r|/|b| = 4.588808e-02
+BiCGstab: 9 iterations, <r,r> = 6.852576e+06, |r|/|b| = 4.612188e-02
+BiCGstab: 10 iterations, <r,r> = 6.945501e+05, |r|/|b| = 1.468358e-02
+BiCGstab: 11 iterations, <r,r> = 4.604921e+05, |r|/|b| = 1.195615e-02
+BiCGstab: 12 iterations, <r,r> = 1.682786e+05, |r|/|b| = 7.227607e-03
+BiCGstab: 13 iterations, <r,r> = 3.866772e+05, |r|/|b| = 1.095606e-02
+BiCGstab: 14 iterations, <r,r> = 2.266915e+04, |r|/|b| = 2.652759e-03
+BiCGstab: 15 iterations, <r,r> = 1.510974e+04, |r|/|b| = 2.165751e-03
+BiCGstab: 16 iterations, <r,r> = 1.925834e+04, |r|/|b| = 2.445060e-03
+BiCGstab: 17 iterations, <r,r> = 3.013072e+03, |r|/|b| = 9.671300e-04
+BiCGstab: 18 iterations, <r,r> = 1.396221e+03, |r|/|b| = 6.583506e-04
+BiCGstab: 19 iterations, <r,r> = 1.604763e+03, |r|/|b| = 7.058063e-04
+BiCGstab: 20 iterations, <r,r> = 5.331809e+02, |r|/|b| = 4.068342e-04
+BiCGstab: 21 iterations, <r,r> = 5.692792e+02, |r|/|b| = 4.203807e-04
+BiCGstab: 22 iterations, <r,r> = 1.587584e+02, |r|/|b| = 2.219977e-04
+BiCGstab: 23 iterations, <r,r> = 1.394807e+02, |r|/|b| = 2.080833e-04
+BiCGstab: 24 iterations, <r,r> = 3.643117e+01, |r|/|b| = 1.063449e-04
+BiCGstab: 25 iterations, <r,r> = 1.919916e+01, |r|/|b| = 7.720070e-05
+BiCGstab: 26 iterations, <r,r> = 1.659858e+01, |r|/|b| = 7.178201e-05
+BiCGstab: 27 iterations, <r,r> = 9.705483e+00, |r|/|b| = 5.488943e-05
+BiCGstab: 28 iterations, <r,r> = 1.655360e+01, |r|/|b| = 7.168468e-05
+BiCGstab: 29 iterations, <r,r> = 5.122111e+00, |r|/|b| = 3.987536e-05
+BiCGstab: 30 iterations, <r,r> = 1.548651e+00, |r|/|b| = 2.192587e-05
+BiCGstab: 31 iterations, <r,r> = 1.125645e+00, |r|/|b| = 1.869308e-05
+BiCGstab: 32 iterations, <r,r> = 9.589643e-01, |r|/|b| = 1.725366e-05
+BiCGstab: 33 iterations, <r,r> = 5.081957e-01, |r|/|b| = 1.256017e-05
+BiCGstab: 34 iterations, <r,r> = 4.541748e-01, |r|/|b| = 1.187385e-05
+BiCGstab: 35 iterations, <r,r> = 7.601579e-01, |r|/|b| = 1.536144e-05
+BiCGstab: 36 iterations, <r,r> = 1.778293e-01, |r|/|b| = 7.429880e-06
+BiCGstab: 37 iterations, <r,r> = 1.214920e-01, |r|/|b| = 6.141211e-06
+BiCGstab: 38 iterations, <r,r> = 6.556933e-02, |r|/|b| = 4.511599e-06
+BiCGstab: 39 iterations, <r,r> = 3.443198e-02, |r|/|b| = 3.269348e-06
+BiCGstab: 40 iterations, <r,r> = 2.215435e-02, |r|/|b| = 2.622464e-06
+BiCGstab: 41 iterations, <r,r> = 8.229862e-02, |r|/|b| = 5.054479e-06
+BiCGstab: 42 iterations, <r,r> = 6.753311e-03, |r|/|b| = 1.447900e-06
+BiCGstab: 43 iterations, <r,r> = 4.479313e-03, |r|/|b| = 1.179195e-06
+BiCGstab: 44 iterations, <r,r> = 3.186007e-03, |r|/|b| = 9.944970e-07
+BiCGstab: 45 iterations, <r,r> = 1.587318e-03, |r|/|b| = 7.019596e-07
+BiCGstab: 46 iterations, <r,r> = 1.671296e-03, |r|/|b| = 7.202889e-07
+BiCGstab: 47 iterations, <r,r> = 9.360057e-04, |r|/|b| = 5.390380e-07
+BiCGstab: 48 iterations, <r,r> = 4.485045e-03, |r|/|b| = 1.179950e-06
+BiCGstab: 49 iterations, <r,r> = 2.342829e-04, |r|/|b| = 2.696810e-07
+BiCGstab: 50 iterations, <r,r> = 1.695536e-04, |r|/|b| = 2.294212e-07
+BiCGstab: 51 iterations, <r,r> = 1.168719e-04, |r|/|b| = 1.904737e-07
+BiCGstab: 52 iterations, <r,r> = 4.939046e-05, |r|/|b| = 1.238231e-07
+BiCGstab: 53 iterations, <r,r> = 2.598836e-05, |r|/|b| = 8.981927e-08
+BiCGstab: Reliable updates = 7
+BiCGstab: Convergence at 53 iterations, L2 relative residual: iterated = 8.981927e-08 (requested = 1.000000e-07)
+Solution = 1.99447e+09
+WARNING: Device reductions on non-native fields is not supported
+
+Reconstructed: CUDA solution = 1.99447e+09, CPU copy = 0
+QUDA_BICGSTAB_CLOVER_SOLVER: time=70.302237 s	Performance=1807.86099627572 GFLOPS	Total Time (incl. load gauge)=243.025334 s
+QUDA_BICGSTAB_CLOVER_SOLVER: 99 iterations. Rsd = 0.00906681684346431 Relative Rsd = 9.73397079586014e-08
+QUDA_BICGSTAB_CLOVER_SOLVER: Time: Y_predict: 2.2e-05 (s) Y_solve: 466.787778 (s) Y_register: 0 (s) X_predict: 2e-06 (s) X_solve: 243.025351 (s) X_register: 1e-06 (s) Total time: 709.912126(s)
+2Flav::invert,  n_count = 0
+CLOV_LINOP: Time spent in clov deriv (total) = 0
+CLOV_LINOP: Time spent in clov apply/invapply (total) = 0
+Destructing
+CLOV_LINOP: Time spent in clov deriv (total) = 0
+CLOV_LINOP: Time spent in clov apply/invapply (total) = 31.310266
+HMC_TIME: Start Energy Time: 877.0298 
+Working through Copy List of length 0
+MD: Resetting Chrono Predictors at start of trajectory
+u0 is 1
+tuneDslasP = 1
+MdagMSysSolverQUDAClover:
+Working with Asymmetric LinOp
+Enabling Dslash Autotuning
+Setting Precondition stuff to defaults for not using
+Creating CloverTerm
